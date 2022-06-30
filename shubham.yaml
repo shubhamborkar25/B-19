@@ -1,6 +1,6 @@
 - name: Playbook1
   hosts: localhost
-  vars_filre : url.yaml
+  vars_file : url.yaml
   vars: 
     URL: cloudblitz.in
   tasks:
