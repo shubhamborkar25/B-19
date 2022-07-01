@@ -1,0 +1,10 @@
+- name : Playbook1
+  hosts : localhost
+    
+  tasks :
+    - name : msg1
+      debug : 
+        msg : "{{URL}}"
+
+# and in hosts file
+# <public ip> URL : hosts_files.com
