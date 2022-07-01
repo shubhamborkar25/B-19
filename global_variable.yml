@@ -2,8 +2,8 @@
   hosts : localhost
   
   vars : 
-    URL : global_variable.com
-  
+    URL : global_variable.com     #this is global variable
+    
   tasks :
     - name : msg1
       debug : 
