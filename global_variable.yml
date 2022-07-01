@@ -1,0 +1,10 @@
+- name : Playbook1
+  hosts : localhost
+  
+  vars : 
+    URL : global_variable.com
+  
+  tasks :
+    - name : msg1
+      debug : 
+        msg : "{{URL}}"
