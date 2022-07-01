@@ -1,0 +1,18 @@
+- name: Playbook1
+  hosts: localhost
+
+  vars: 
+    URL: global.cloudblitz.in
+
+  # vars_files: url.yml
+
+  # vars_prompt:
+  # - name: URL
+  #   prompt: "ENTER URL"   
+  #   private: no
+
+  tasks:
+  - shell: ps 
+  - name: Print messages_1
+    debug:
+      msg: "{{URL}}"
