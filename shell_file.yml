@@ -12,7 +12,9 @@
   #   private: no
 
   tasks:
-  - shell: ps 
-  - name: Print messages_1
-    debug:
+  - shell: ps >> hostname.txt
+   - name: Print messages_1
+     debug:
       msg: "{{URL}}"
+    # vars: 
+    #   URL: local.cloudblitz.in
