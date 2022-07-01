@@ -8,5 +8,5 @@
     - name : msg1
       debug : 
         msg : "{{URL}}"
-        vars :
-          URL : local_varibale.com      # this is local varible
+        # vars :
+        #   URL : local_varibale.com      # this is local varible
