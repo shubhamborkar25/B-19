@@ -1,3 +1,4 @@
+# to run use command    ansible-playbook tag_file.yml -t dist
 - name : Playbook_data_file
   hosts : all
   tasks:
@@ -10,5 +11,10 @@
       debug:
         msg: "Distribution name of ansible: {{ansible_distribution}}"  
       tags: dist
+    
+    - name: print the host details_2
+      debug:
+        msg: "ansible product verson :{{ansible_product_version}}"
+      tags: prod
 
    
