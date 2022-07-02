@@ -7,4 +7,4 @@
 
     - name: print the host details_2
       debug:
-        msg: "Domain name of ansible stage 2 : {{ansible_lo.}}"
+        msg: "Domain name of ansible stage 2 : {{ansible_lo.loopback}}"
