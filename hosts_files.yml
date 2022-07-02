@@ -1,7 +1,6 @@
-- name : Playbook1
-  hosts : localhost
-  
-  tasks :
-    - name : msg1
-      debug : 
-        msg : "{{URL}}"
+- name: playbook-5
+  hosts: all
+  tasks:
+    - name: print url
+      debug:
+        msg: "{{URL}}"
