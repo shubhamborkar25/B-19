@@ -1,6 +1,7 @@
 - name : Playbook_data_file
   hosts : localhost
-  task :
-    - name : prints the details
-        debug : 
-          msg: "Distribution name of ansible: {{ansible_distribution}}" 
+  tasks:
+    - name: print the host details_1
+      debug:
+        msg: "Domain name of ansible: {{ansible_lo.features.rx_udp_gro_forwarding}}"
+      tags: domain
