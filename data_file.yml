@@ -1,0 +1,6 @@
+- name : Playbook_data_file
+  hosts : localhost
+  task :
+    - name : prints the details
+        debug : 
+          msg: "Distribution name of ansible: {{ansible_distribution}}" 
