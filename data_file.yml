@@ -3,5 +3,8 @@
   tasks:
     - name: print the host details_1
       debug:
-        msg: "Domain name of ansible: {{ansible_memtotal_mb}}"
-   
+        msg: "Domain name of ansible stage 1: {{ansible_lo}}"
+
+    - name: print the host details_2
+      debug:
+        msg: "Domain name of ansible stage 2 : {{ansible_lo.}}"
