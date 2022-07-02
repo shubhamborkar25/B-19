@@ -3,4 +3,4 @@
   tasks:
     - name: print url
       debug:
-        msg: "{{URL}}"
+        msg: "hello shiunja"
