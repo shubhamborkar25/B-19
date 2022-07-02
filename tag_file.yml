@@ -1,0 +1,12 @@
+- name : Playbook_data_file
+  hosts : all
+  tasks:
+    - name: print the host details_1
+      debug:
+        msg: "Domain name of ansible stage 1: {{ansible_distribution}}"
+      tag: domain
+
+    - name: print the host details_2
+      debug:
+        msg: "Domain name of ansible stage 2 : {{ansible_lo.features.loopback}}"
+      tag: feta
