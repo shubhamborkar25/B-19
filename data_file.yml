@@ -4,4 +4,4 @@
     - name: print the host details_1
       debug:
         msg: "Domain name of ansible: {{ansible_lo.features.rx_udp_gro_forwarding}}"
-      tags: domain
+     # tags: domain
