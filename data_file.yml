@@ -1,9 +1,9 @@
 - name : Playbook_data_file
-  hosts : localhost
+  hosts : all
   tasks:
     - name: print the host details_1
       debug:
-        msg: "Domain name of ansible stage 1: {{ansible_lo}}"
+        msg: "Domain name of ansible stage 1: {{ansible_distribution}}"
 
     - name: print the host details_2
       debug:
