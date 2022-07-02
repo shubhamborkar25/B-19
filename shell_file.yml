@@ -18,3 +18,4 @@
       msg: "{{URL}}"
     # vars: 
     #   URL: local.cloudblitz.in
+     #   URL: local.cloudblitz.in
