@@ -1,0 +1,25 @@
+# this is when module file  
+# when module is used for loop process like in task 2 if the details not matched then it skipped task 2 and proceed further
+-
+  name : playbook1
+  hosts : all
+  tasks :
+   -
+     name : print the host details 1
+     debug :
+             msg : "ansible date time : {{ansible_date_time}}"
+     when : ansible_date_time.year == "2022"
+     tags : biosv
+
+   -
+     name : print the host details 2
+     debug :
+             msg : "ansible data time : {{ansible_date_time.month}}"
+     when : ansible_date_time.month == "04" or ansible_date_time.day == "05"
+     tags : datet
+
+   -
+     name : print the host details 3
+     debug :
+             msg : " ansible date weekday = {{ansible_date_time.weekday}}"
+     tags : weekday
